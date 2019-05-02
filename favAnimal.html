@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Favourite Animal</title>
+    
+    <style>
+        /*this sets the style of the background*/
+        body {
+            font-family: sans-serif;
+            background-color: white;
+            background-image: url(https://i.ytimg.com/vi/QZgksvdLP1U/maxresdefault.jpg);
+            background-size: cover
+        }
+        
+        /*this sets the style of the table*/
+        table {
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            align-self: center    
+        }
+        
+        /*this sets the style of the the table elements*/
+        th,td{
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        /*this sets the style of the title*/
+        h1{
+            text-align: center
+        }
+        
+        /*this sets the size of the animal*/
+        #imageOfAnimal { 
+            height: 100px; 
+            width: 100px;
+        }
+        #imageOfAnimal:hover {
+            height: 100px;
+            width: 100px;
+        }
+        
+        /*this sets the size of the tezt in the 3rd row, 2nd column*/
+        #size {
+            font-size: 50px;
+        }
+        
+        /*this sets the color of the text in the 4th row, 2nd column*/
+        #animalColor { color: red;}
+        #animalColor:hover  {color:purple;}
+        
+    
+    </style>
+</head>
+    
+<body>
+    
+    <h1>This website is all about my favourite animal</h1>
+    <table id = "mytable" align="center">
+    <caption>Here is all the info about my favourite animal! </caption>
+        
+        <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>answer</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+            <tr id="name">
+                <td>What type of animal?</td>
+                <td>Dog</td>
+            </tr>
+            
+            <tr>
+                <td>What size is he?</td>
+                <td id ="size">Big</td>
+            </tr>
+            
+            <tr id="color">
+                <td>What color is he?</td>
+                <td id = "animalColor" >Red</td>
+            </tr>
+                        
+            <tr id="speak">
+                <td>What does he say?</td>
+                <td>Barks</td>
+            </tr>
+            
+            <tr id="image">
+                <td>What does he look like??</td>
+                <td><img id = "imageOfAnimal" src="https://vignette.wikia.nocookie.net/clifford/images/d/d1/Clifford4.png/revision/latest?cb=20131006055214" alt="image of clifford"></td>
+            </tr>
+            
+            <!--ADD TABLE ROW HERE -->
+            
+            
+        </tbody>
+    </table>
+    
+    
+</body>
+
+
+</html>
