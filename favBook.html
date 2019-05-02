@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Favourite Book!</title>
+    <meta charset="utf-8">
+    
+    
+    <style>
+        /*this sets the style of the entire document*/
+        body {
+            font-family:inherit;
+            font-size: 20px;
+            text-align: center;
+            background-color: cornflowerblue;
+
+        }
+        /*this sets the style of the name*/
+        #nameOfBook {
+            /*add font-family to change font*/
+            font-weight: bold;
+            font-size: 20px;
+            color: blue;
+        }
+        
+        /*this sets the style of the image*/
+        #bookCover {
+            height: 200px;
+            width: auto; 
+        }
+        
+        /*THIS IS WHERE TO ADD CSS CODE FOR THE AUTHOR IMAGE*/
+        
+    </style>
+    
+</head>
+
+<body>
+    
+    <h1>Here is my favourite book</h1>
+    
+    <div class = "bookName">
+        My favourite book is <a id="nameOfBook">BOOK TITLE</a>
+    </div>
+
+    <div class="images">
+        Here is the cover:<br>
+        <img id="bookCover" src="http://t0.gstatic.com/images?q=tbn:ANd9GcTA3iidX3bbxIhopbfouLfw3ijl2uEghxDZ1K9pXj3AgzYnz2c2" alt="Cat in the hat">
+        
+        <!--THIS IS WHERE TO ADD THE IMAGE OF THE AUTHOR-->
+        
+    </div>
+
+    
+    <div class="bookInfo">
+        Here is some information about this book:<br>
+        Title: TITLE<br>
+        Author: First Last<br>
+        Year: 0000<br>
+        Number of pages: 9999<br>
+        Genre: GENRE<br>
+    </div>
+    
+    <hr>
+    
+    <div>
+        <p>Please fill out this form so I can recommend you a book for the future</p>
+    </div>
+        
+    <div class="formInfo">
+        
+        <form action="post" id="form">
+            
+            How did you find this book?
+            <select class="rating">
+                <option selected>5 - AMAZING!</option>
+                <option>4 - Great!</option>
+                <option>3 - Okay</option>
+                <option>2 - Bad</option>
+                <option>1 - Terrible</option>
+                <!-- THIS IS WHERE YOUR NEW OPTION SHOULD BE -->
+
+            </select>
+            
+            <div class="buttons">
+                What is your favourite genre?<br>
+                <label>Fantasy
+                <input type="radio" name="answer" value="1">
+                </label><br>
+                
+                <label>Drama
+                <input type="radio" name="answer" value="2">
+                </label><br>
+                
+                <label>Sci-Fi
+                <input type="radio" name="answer" value="3">
+                </label><br>
+                
+                <label>Horror
+                <input type="radio" name="answer" value="4">
+                </label><br>
+                
+                <label>Action
+                <input type="radio" name="answer" value="5">
+                </label><br>
+                
+                <!-- THIS IS WHERE YOUR NEW RADIO BUTTON SHOULD BE -->
+                
+                <label>Other (please specify)
+                <input type="radio" name="answer">
+                <input type="text" name="answer" value="">
+                </label><br>
+                
+                <input type="submit">
+            </div>
+            
+        </form>
+    
+    </div>
+    
+</body>
+    
+</html>
