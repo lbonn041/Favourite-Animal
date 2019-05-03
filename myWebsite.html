@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>My Personal Website</title>
+        <meta charset="utf-8">
+        
+        <style>
+            
+            /*this changes the style of the entire page*/
+            body{
+                font-family: sans-serif;
+                text-align: center;
+                background-color: aliceblue;
+                font-size: 15px;
+            }
+            /*DO NOT EDIT THIS*/
+            .row {
+                display: flex;
+            }
+            /*DO NOT EDIT THIS*/
+            .column {
+                flex: 33.33%;
+                padding: 5px;
+            }
+            /*this changes the style of the title of the page*/
+            h1 {
+                font-size: 50px;
+                color: royalblue;
+            }
+            /*this changes the style of the table*/
+            table {
+                width:70%; 
+                margin-left:15%; 
+                margin-right:15%;
+                text-align: center;
+                border-style: solid;
+                border-width: 7px;
+                border-color: white;
+                border-collapse: collapse;
+                overflow: hidden;
+            }
+            
+            th, td {
+                padding: 1em;
+                border-bottom: 2px solid white; 
+            }
+            
+            /*this changes the style of the first line of the table*/
+            th {
+                background-color: cadetblue;
+            }
+            
+            /*this changes the style of the odd lines of the table*/
+            .odd {
+                background-color: aliceblue;
+            }
+            
+            /*this changes the style of the even lines of the table*/
+            .even {
+                background-color: azure;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+    
+        <h1>Welcome to my website!</h1>
+        <p>This is a website all about me! It is full of all my favourite things</p>
+        
+        <div class="aboutMe">
+            <p>Here is a little bit about me:<br>
+                My name is Luc, I am 21 years old, I go to the University of Ottawa and I made this website with the help of my awesome instructor Luc.
+            </p>
+        </div>
+        
+        <div class="photos">
+            <a class="imageDetails">Here are 3 images that represent me well.</a><br>            
+            
+            <div class="row">
+                
+                <div class="column">
+                    <img src="https://www.ville.rigaud.qc.ca/wp-content/uploads/2019/03/basketball.jpg" alt="basketball" style="width:100%">
+                </div>
+                
+                <div class="column">
+                    <img src="https://cff2.earth.com/uploads/2019/01/15202029/Sleeping-less-than-6-hours-a-night-increases-heart-disease-risk-730x410.jpg" alt="basketball" style="width:100%">
+                </div>
+                
+                <div class="column">
+                    <img src="https://mybroadband.co.za/news/wp-content/uploads/2016/01/Programmer-working-computer-code.jpg" alt="basketball" style="width:100%">
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="myTable">
+            Here is a table of some of my favourite things
+            <table>
+                <tr class="odd">
+                    <th>My Favourite...</th>
+                    <th>Is</th> 
+                </tr>
+                
+                <tr class="even">
+                    <td>Sport</td>
+                    <td>Soccer</td> 
+                </tr>
+                
+                <tr class="odd">
+                    <td>Movie</td>
+                    <td>Avengers</td> 
+                </tr>
+                <tr class="even">
+                    <td>Book</td>
+                    <td>Harry Potter</td> 
+                </tr>
+                
+                <tr class="odd">
+                    <td>School Subject</td>
+                    <td>Computer Science of course!</td> 
+                </tr>
+                <tr class="even">
+                    <td>Pass time</td>
+                    <td>LEGOS</td> 
+                </tr>
+                
+                <tr class="odd">
+                    <td>Song</td>
+                    <td>Twinkle Twinkle Little Star</td> 
+                </tr>
+            </table>
+        </div>
+        
+        
+        
+        <hr>
+        
+        <div class="myForm">
+            <div class="dropMenu">
+                <p>Let me know what you think of my website</p>
+                <select class="rating">
+                    How many stars do you give it?
+                    <option selected>5 - AMAZING!</option>
+                    <option>4 - Great!</option>
+                    <option>3 - Okay</option>
+                    <option>2 - Could be better</option>
+                    <option>1 - Not for me</option>
+                    <!-- THIS IS WHERE YOUR NEW OPTION SHOULD BE -->
+                </select>
+            </div>
+            
+            <div class="comments">
+                <p id="commentText">Say something nice!</p>
+                <textarea id="commentsTextBox" rows="10" cols="50"></textarea>
+            </div>
+        
+            <div class="submit">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    
+    </body>
+    
+</html>
