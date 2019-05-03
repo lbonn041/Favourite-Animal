@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Business Website</title>
+        <meta charset="utf-8">
+        
+        <style>
+        /* DO NOT EDIT */
+           .column {
+               float: left;
+               width: 50%;
+            }
+
+            /* DO NOT EDIT */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            } 
+            
+            body {
+                font-family: monospace;
+                background-color: lightcyan;
+                font-size: 15px;
+            }
+            
+            h1 {
+                text-align: center;
+            }
+            
+            .services {
+                text-align: center;
+            }
+            
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 10%;
+            }
+            
+            /*this changes the style of the table*/
+            table {
+                width:50%; 
+                margin-left:25%; 
+                margin-right:25%;
+                text-align: center;
+                border-style: solid;
+                border-width: 7px;
+                border-color: white;
+                border-collapse: collapse;
+                overflow: hidden;
+            }
+            
+            th, td {
+                padding: 1em;
+                border-bottom: 2px solid white; 
+            }
+            
+            /*this changes the style of the first line of the table*/
+            th {
+                background-color: cadetblue;
+            }
+            
+            /*this changes the style of the odd lines of the table*/
+            .odd {
+                background-color: aliceblue;
+            }
+            
+            /*this changes the style of the even lines of the table*/
+            .even {
+                background-color: azure;
+            }
+            
+            #button {
+width: 30%;
+margin-left: 35%;
+margin-right: 35%;
+            }
+            
+            
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="header">
+            <h1>uOttawa Photo Service!</h1>
+            <img src="http://www.clipartroo.com/images/49/taking-pictures-clipart-49418.png" alt="logo">
+            <p id="info">We offer all sorts of amazing photos services such as photo shoots, photo editing, developping, printing and more! </p>
+            <hr>
+        </div>
+        
+        <div class="services">
+            <table>
+                Here are all of the services that we offer
+            <table>
+                <tr class="odd">
+                    <th>Service</th>
+                    <th>Time needed</th>
+                    <th>Price $</th>
+                </tr>
+                
+                <tr class="even">
+                    <td>Photoshoot</td>
+                    <td>1h</td> 
+                    <td>50$/h</td>
+                </tr>
+                
+                <tr class="odd">
+                    <td>Film developping</td>
+                    <td>24h</td> 
+                    <td>10$/roll</td>
+                </tr>
+                <tr class="even">
+                    <td>Photo printing</td>
+                    <td>5h</td> 
+                    <td>1.50$/photo</td>
+                </tr>
+                
+                <tr class="odd">
+                    <td>Photo editing</td>
+                    <td>24h</td> 
+                    <td>3.50$/photo</td>
+                </tr>
+                <tr class="even">
+                    <td>Video editing</td>
+                    <td>12h</td> 
+                    <td>Please call</td>
+                </tr>
+                
+            </table>
+            </table>
+        </div>
+        <hr>
+        
+        <p>If you are interested, fill out this form</p>
+        <div class="form">
+            <form action="post">
+                <div class="row">
+                    
+                    <div class="column">
+                        Please enter your name: <br>
+                        <input type="text">
+                        <br>
+                        Please enter your email: <br>
+                        <input type="email">
+                        <br>
+                        Please enter your phone number: <br>
+                        <input type="tel">
+                    </div>
+                
+                    <div class="column">
+                        
+                        What service would would you like?<br>
+                        <select class="serviceReq">
+                            <option selected>Photoshoot</option>
+                            <option>Film developping</option>
+                            <option>Photo printing</option>
+                            <option>Photo editing</option>
+                            <option>Video editing</option>
+                            <!-- THIS IS WHERE YOUR NEW OPTION SHOULD BE -->
+                        </select>
+                        <br>
+                        
+                        When do you want your service done?<br>
+                        <input type="date"><br>
+                        
+                        How many services do you need?<br>1
+                        <input type="range" min="1" max="5">5
+                    </div>
+                </div>
+                <input type="submit" value ="Submit (doesn't do anything)" id="button">
+            </form>
+        </div>
+
+        
+        <hr>
+        
+        <div class="contact">
+            <p>Contact us!</p>
+            <p>
+                Number: (613)123-4567<br>
+                Address: 123 University Pvt. <br>
+                City: Ottawa, ON
+            </p>
+        </div>
+        
+        <div class="myOwn">
+            <form action="myBusinessWebsite.html">
+                <input type="submit" value ="Click to see my own website" id="button">
+            </form>
+        </div>
+
+    </body>
+</html>
